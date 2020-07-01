@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                iFleaMarket
+            </div>
+        </header>
+        <div class="nav">
+            <a href="#" id="get" class="btn btn-primary">Reload List</a>
+            <a href="#" id="openPost" data-target="postModal" class="btn btn-secondary">Add New Item</a>
+        </div>
+        <ul id="list" class="list">
+            <!-- <li class="list__item" data-id="4">
+                <img src="./images/chair.jpg" alt="" class="img">
+                <div class="list__item__main">
+                    <div class="list__item__main__text">
+                        <div class="title">Chair</div>
+                        <div class="category">Bedroom</div>
+                        <div class="content">A brown chair perfect for reading a book.</div>
+                    </div>
+                    <div class="list__item__main__price">
+                        <div class="ori">$400</div>
+                        <div class="now">$100</div>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="edit material-icons">edit</a>
+                    <a href="#" class="delete material-icons">delete</a>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="modal" id="postModal">
+        <div class="modal__shadow">
+            <div class="modal__main">
+                <div class="modal__main__header">
+                    Add New Item
+                </div>
+                <div class="modal__main__form">
+                    <input type="text" id="post_title" placeholder="product name...">
+                    <input type="text" id="post_category" placeholder="category...">
+                    <input type="text" id="post_content" placeholder="content...">
+                    <input type="number" id="post_price_ori" placeholder="original price">
+                    <input type="number" id="post_price" placeholder="price">
+                    <input type="url" id="post_url" placeholder="imageUrl">
+                </div>
+                <div class="modal__main__functionBar">
+                    <a class="closeModal" href="#">Cancel</a>
+                    <a id="post" href="#">Add</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="editModal">
+        <div class="modal__shadow">
+            <div class="modal__main">
+                <div class="modal__main__header">
+                    Edit Item
+                </div>
+                <div class="modal__main__form">
+                    <input type="text" id="edit_title">
+                    <input type="text" id="edit_category">
+                    <input type="text" id="edit_content">
+                    <input type="number" id="edit_price_ori">
+                    <input type="number" id="edit_price">
+                    <input type="url" id="edit_url">
+                    <div id="edit_item_id" data-editid="1"></div>
+                </div>
+                <div class="modal__main__functionBar">
+                    <a class="closeModal" href="#">Cancel</a>
+                    <a id="edit" href="#">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="./js/all.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- CORS -->
+    <script src="./js/cors.js"></script>
+
+</body>
+
+</html>
