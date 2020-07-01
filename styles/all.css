@@ -20,6 +20,12 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 1280px) {
+  .container {
+    width: 50vw;
+  }
+}
+
 header {
   background-color: #325a77;
   margin-top: 16px;
