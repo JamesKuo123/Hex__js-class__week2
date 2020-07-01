@@ -18,6 +18,7 @@ function getData() {
       }
     );
 }
+getData();
 function postData() {
   let api = `${apiPath}api/${uuid}/admin/ec/product`
   let data = {
